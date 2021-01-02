@@ -1,0 +1,151 @@
+/*
+Orange Color used- e67e22
+*/
+
+/*---------------------------------------------------------*/
+/*  BASIC SETUP */
+/*---------------------------------------------------------*/
+
+*   {
+    margin: : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html    {
+    background-color: #ffffff;
+    color: #555555;
+    font-family: 'Lato','Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/*---------------------------------------------------------*/
+/*  REUSABLE COMPONENTS */
+/*---------------------------------------------------------*/
+
+.row    {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/*---------------------------------------------------------*/
+/*  HEADINGS */
+/*---------------------------------------------------------*/
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+
+/*---------------------------------------------------------*/
+/*  BUTTONS */
+/*---------------------------------------------------------*/
+
+.btn:link,               /* Button has three states- active(when we click),visited, hover */
+.btn:visited {
+    display: inline-block;  /* to convert inline elemnt ot Inline-Block element to add Margin/padding */
+    padding: 10px 30px;  /*2 values-({top & bottom} {right & left}), 4 values- (top,right,bottom, left) */
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s ; /* this makes background color of button to change slowly */
+}
+
+.btn-full:link,
+.btn-full:visited {
+    border: 1px solid #e67e22;      /*https://flatuicolors.com/*/
+    background-color: #e67e22;
+    color: #fff;
+    margin-right: 16px;
+}
+
+.btn-ghost:link,
+.btn-full:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;      /* 0to255.com */
+}
+
+/*--------------------*/
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;      /*https://flatuicolors.com/*/
+}
+
+.btn-ghost:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+
+/*---------------------------------------------------------*/
+/*  HEADER */
+/*---------------------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7 ),rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /*his linear gradient starts at the top. It starts red, transitioning to yellow, then to blue */
+    background-size: cover; /* To Show whole image, not Zoomed */
+    background-position: center;
+    height: 100vh; /* Viewport 100 %- this wil cover whole screen */
+}
+
+.hero-text-box {
+    position: absolute; /* To Center the Button vertically and Horizonatally Centered */
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Trick to shift Element half of it's widht & height Up and to left */
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {      /* Selecting all list <li> elements under 'main-nav' */
+    display: inline-block;      /* Converting inline element to inline-block */
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 5px 0; /* Top & Bottom -8 px and Left & right -0 px*/
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;             /* 18px/base size(20px) = 0.9 */
+    border-bottom: 2px solid transparent;   /* This will make it transparent untill we hove over it (below coded) */
+    transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+/* -------------------- ABOVE: HEADER && BELOW: FEATURES -------------------- */
+
+
