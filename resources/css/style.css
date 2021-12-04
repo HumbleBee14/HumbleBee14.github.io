@@ -98,7 +98,7 @@ h1 {
 /*---------------------------------------------------------*/
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7 ),rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /*his linear gradient starts at the top. It starts red, transitioning to yellow, then to blue */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7 ),rgba(0, 0, 0, 0.7)), url(img/grepGuruLogoFull3-01.png.jpg); /*his linear gradient starts at the top. It starts red, transitioning to yellow, then to blue */
     background-size: cover; /* To Show whole image, not Zoomed */
     background-position: center;
     height: 100vh; /* Viewport 100 %- this wil cover whole screen */
