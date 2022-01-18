@@ -1,92 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
-        <title>Omnifood</title>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
 
-        <body>
-           <header>
-               <nav>
-                   <div class="row">
-                       <img src="resources/img/logo-white.png" alt="omnifood Logo" class="logo" >
-                       <ul class="main-nav">
-                            <li><a href="#">Food Delivery</a></li>
-                            <li><a href="#">How it works</a></li>
-                            <li><a href="#">Our Cities</a></li>
-                            <li><a href="#">Sign up</a></li>
-                       </ul>
-                   </div>
-               </nav>
-               <div class="hero-text-box"> <!--(This is for adding Textbox which floats over the Big background Image)-->
-               <h1>Goodbye junk food.<br> Hello super healthy meals.</h1> <!--(Main Heading)-->
-                <a class="btn btn-full" href="#">I’m hungry </a> <!--(For Adding Button1 -go down to sign up section)-->
-                <a class="btn btn-ghost" href="#">Show me more </a> <!--(For Adding Button2 -(go down to next section)-->
+html {
+  box-sizing: border-box;
+}
 
-               </div>
-           </header>
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-<!--( Section Features)-->
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
 
-           <section class="section-features">
-               <div class="row">    <!--(Bcoz we want this section centered in a row )-->
-                    <h2>Get food fast &mdash; not fast food</h2>
-                    <p class="long-copy">
-                        Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
-                    </p>
-                </div>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
 
-                <div class="row">
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
 
-                    <div class="col span-1-of-4">   <!-- (For each column, we'll use span 1 of 4) in grid.css -->
-                        <h3> Up to 365 days/year</h3>
-                        <p>
-                            Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
-                        </p>
-                    </div>
+.container {
+  padding: 0 16px;
+}
 
-                    <div class="col span-1-of-4">   <!-- (For each column, we'll use span 1 of 4) in grid.css -->
-                        <h3> Ready in 20 minutes</h3>
-                        <p>
-                            You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
-                        </p>
-                    </div>
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-                    <div class="col span-1-of-4">   <!-- (For each column, we'll use span 1 of 4) in grid.css -->
-                        <h3>100% organic</h3>
-                        <p>
-                            All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
-                        </p>
-                    </div>
+.title {
+  color: grey;
+}
 
-                    <div class="col span-1-of-4">   <!-- (For each column, we'll use span 1 of 4) in grid.css -->
-                        <h3>Order anything</h3>
-                        <p>
-                            We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
-                        </p>
-                    </div>
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
 
-                </div>
+.button:hover {
+  background-color: #555;
+}
 
-           </section>
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
 
-           <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>    <!--(https://ionicons.com/usage)-->
-        </body>
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>We are grepGuru _/\_</p>
+  <p>For Business queries, Please contact us on: contactdy14@gmail.com</p>
+</div>
 
 
-    </head>
-
-
+</body>
 </html>
-
-
-
-
-
-
 
 
 
